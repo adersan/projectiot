@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Captura de Placas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Sistema de Captura de Placas</h1>
+    </header>
+
+    <main class="painel-principal">
+      <!-- Painel da Câmera -->
+      <section class="painel camera">
+        <h2>Câmera</h2>
+        <div class="camera-feed">
+          <div class="feed-mock"></div>
+        </div>
+        <div class="restricao">
+          <span class="icone">⚠️</span>
+          <span>Restrição: <strong>IPVA Atrasado</strong></span>
+        </div>
+      </section>
+
+      <!-- Painel do Resultado -->
+      <section class="painel resultado">
+        <h2>Resultado da Consulta</h2>
+
+        <div class="placa-simulada">
+          <img id="placa-img" src="image.png" alt="Placa do veículo">
+        </div>
+
+        <ul class="info-veiculo">
+          <li><span>👤</span> Proprietário: João Silva</li>
+          <li><span>📅</span> Ano: 2018</li>
+          <li><span>🚗</span> Modelo: Ford Fiesta</li>
+          <li><span>🎨</span> Cor: Vermelho</li>
+          <li><span>📍</span> Local: São Paulo</li>
+        </ul>
+
+        <div class="restricao">
+          <span class="icone">⚠️</span>
+          <span>Restrição: <strong>IPVA Atrasado</strong></span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
