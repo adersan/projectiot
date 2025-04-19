@@ -13,6 +13,9 @@ modelo = YOLO(modelo_path)  # Carrega o modelo
 def index(request):
     return render(request, 'index.html')
 
+def dashboard(request):
+    return render(request, 'dashboard.html')
+
 def capturar_placa(request):
     cap = cv2.VideoCapture(0)
     ret, frame = cap.read()

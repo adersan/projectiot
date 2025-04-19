@@ -10,7 +10,7 @@ model = YOLO('yolov8n.pt')
 reader = easyocr.Reader(['en'])
 
 # Inicia a webcam (0 = webcam padrão)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 texto_detectado = ""
 padding = 10  # Ajuste se necessário
